@@ -1,6 +1,6 @@
 name: "O alemão zangado"
-colorScheme: "warm"
-fontPairing: "literary"
+colorScheme: "custom"
+fontPairing: "custom"
 favicons:
    - "images/favicon.png"
 css:
@@ -17,6 +17,9 @@ tokens:
    colorAccentHover:
       any: "#A84A1F"
       dark: "#F09050"
+   colorAccentLight:
+      any: "rgba(196, 91, 40, 0.08)"
+      dark: "rgba(232, 122, 58, 0.12)"
    colorBg:
       any: "#FAFAF5"
       dark: "#1A1A18"
