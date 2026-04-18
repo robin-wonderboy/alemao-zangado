@@ -29,16 +29,8 @@ jobs:
         with:
           swift-version: "6.2"
 
-      - name: Build site (debug)
-        run: |
-          echo "=== SiteConfig.yaml ==="
-          cat SiteConfig.yaml
-          echo "=== Theme files ==="
-          find Theme -type f
-          echo "=== Content files ==="
-          find Content -type f
-          echo "=== Building ==="
-          swift run Site build 2>&1 || swift run -c release Site build
+      - name: Build site
+        run: swift run Site build 2>&1 || swift run -c release Site build
 
       - name: Generate favicon PNGs
         run: |

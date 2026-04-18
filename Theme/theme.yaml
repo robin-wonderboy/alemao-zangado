@@ -1,6 +1,6 @@
 name: "O alemão zangado"
-colorScheme: "teal"
-fontPairing: "modern"
+colorScheme: "orange"
+fontPairing: "editorial"
 css:
    - "css/theme.css"
 js:
