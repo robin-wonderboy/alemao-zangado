@@ -3,9 +3,6 @@ baseURL: "https://alemao-zangado.github.io"
 description: "Um blog de Coimbra"
 language: "pt"
 
-localization:
-  defaultLanguage: "pt"
-
 contentDirectory: "Content"
 outputDirectory: "_Site"
 assetsDirectory: "Content/Assets"
@@ -39,6 +36,3 @@ homePage:
 footer:
   copyrightName: "Nicolo Stanciu"
   startYear: 2025
-  links:
-    - title: "Sobre"
-      url: "/about/"
