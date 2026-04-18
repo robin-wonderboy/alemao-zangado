@@ -30,7 +30,15 @@ jobs:
           swift-version: "6.2"
 
       - name: Build site
-        run: swift run Site build
+        run: swift run Site build 2>&1 || swift run -c release Site build
+
+      - name: Generate favicon PNGs
+        run: |
+          sudo apt-get install -y imagemagick
+          if [ -f Theme/images/favicon.png ]; then
+            convert Theme/images/favicon.png -resize 180x180 _Site/apple-touch-icon.png
+            convert Theme/images/favicon.png -resize 32x32 _Site/favicon-32x32.png
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
